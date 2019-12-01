@@ -1,0 +1,24 @@
+Meaning of the columns in files “seq.CSV” and “seq.numbers”, representing the benchmarking of performing SEQ finger-tree with tree-size = 50 and timing over 50 points distant each other 10,000 nodes. We plot (in R) columns c2,c3 and c4 for “semi forest creation”; c7,c9,c11, c13, and c15 for "queries"; and c18, c20 and c22 for "updates:
+
+c1   : number of operations (x10,000), simply a counter column from 1 to 50
+c2   : trees creation. Timing in seconds
+c3   : forest creation of  trees from c2, but timing is only on forest insertion. Timing in seconds 
+c4   : forest creation with trees creation altogether, simply the arithmetic addition from c3 and c2
+c5   : separator (capital o)
+c6   : viewl . viewr, that is, the root (left-most pair) from the right-most tree. Timing in seconds
+c7   : same as c6 but timing in microseconds 1x10^6 
+c8   : search for the element at position N/2 of the 50th out ot 100. Time in seconds
+c9   : same as c8, in microseconds
+c10 : search for the element at position N(3/4) or the 75th out of 100. Time in seconds
+c11 : same as c10, in microseconds
+c12 : search for an element not in the forest (N+1) or the 101th out of  100. Time in seconds
+c13 : same as c12, in microseconds
+c14 : search for the element at position N/4 or the 25th out of 100. Time in seconds
+c15 : same as c14, in microseconds
+c16 : separator (capital oh)
+c17 : merging trees at positions 50th and 25th, look up operations are NOT included in timing. Time in seconds
+c18 : same as c17, in microseconds
+c19 : merging trees at positions 50th and 25th, look up operations ARE included in timing. Time in seconds
+c20 : same as c19, in microseconds
+c21 : inserting a "new" tree into the forest, comprised of pairs from (N+1) up to (N+50). Time in seconds
+c22 : same as c21, in microseconds
