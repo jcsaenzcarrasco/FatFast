@@ -1,4 +1,4 @@
-Meaning of the columns in files “seq.CSV” and “seq.numbers”, representing the benchmarking of performing SEQ finger-tree with tree-size = 50 and timing over 50 points distant each other 10,000 nodes. We plot (in R) columns c2,c3 and c4 for “semi forest creation”; c7,c9,c11, c13, and c15 for "queries"; and c18, c20 and c22 for "updates:
+Meaning of the columns in file “seq.CSV”, representing the benchmarking of performing SEQ finger-tree with tree-size = 50 and timing over 50 points distant each other 10,000 nodes. We plot (in R) columns c2,c3 and c4 for “semi forest creation”; c7,c9,c11, c13, and c15 for "queries"; and c18, c20 and c22 for "updates:
 
 c1   : number of operations (x10,000), simply a counter column from 1 to 50
 c2   : trees creation. Timing in seconds
